@@ -8,5 +8,5 @@ if [ "$1" == "apt" ]; then
 elif [ "$1" == "dnf" ]; then
         sudo dnf install nfs-utils
 else
-        printf "${RED}Invalid option. Enter either apt or dnf.${nc}\n"
+        printf "${RED}Invalid option. Enter either apt or dnf.${NC}\n"
 fi

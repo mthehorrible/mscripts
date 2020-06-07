@@ -15,7 +15,7 @@ elif [ "$1" == "dnf" ]; then
 	sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 	sudo dnf install brave-browser
 else
-        printf "${RED}Invalid option. Enter either apt or dnf.${nc}\n"
+        printf "${RED}Invalid option. Enter either apt or dnf.${NC}\n"
 fi
 
 

@@ -10,5 +10,5 @@ elif [ "$1" == "dnf" ]; then
 elif [ "$1" == "pacman" ]; then
         sudo pacman -S s-tui
 else
-        printf "${RED}Invalid option. Enter either apt, dnf, or pacman.${nc}\n"
+        printf "${RED}Invalid option. Enter either apt, dnf, or pacman.${NC}\n"
 fi
