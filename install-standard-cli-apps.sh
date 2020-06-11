@@ -8,7 +8,7 @@ if [ "$1" == "apt" ]; then
 elif [ "$1" == "dnf" ]; then
         sudo dnf install htop neofetch screenfetch stress tmux uptimed
 elif [ "$1" == "pacman" ]; then
-        sudo pacman -S s-tui tmux
+        sudo pacman -S htop neofetch screenfetch s-tui tmux
 elif [ "$1" == "yum" ]; then
         sudo yum tmux
 else
