@@ -8,7 +8,9 @@ if [ "$1" == "apt" ]; then
 elif [ "$1" == "dnf" ]; then
         sudo dnf install htop neofetch screenfetch stress tmux uptimed
 elif [ "$1" == "pacman" ]; then
-        sudo pacman -S s-tui
+        sudo pacman -S s-tui tmux
+elif [ "$1" == "yum" ]; then
+        sudo yum tmux
 else
-        printf "${RED}Invalid option. Enter either apt, dnf, or pacman.${NC}\n"
+        printf "${RED}Invalid option. Enter either apt, dnf, pacman, or yum.${NC}\n"
 fi
