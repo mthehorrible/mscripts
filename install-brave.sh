@@ -17,5 +17,3 @@ elif [ "$1" == "dnf" ]; then
 else
         printf "${RED}Invalid option. Enter either apt or dnf.${NC}\n"
 fi
-
-
