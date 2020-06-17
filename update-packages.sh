@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 if [ "$1" == "apt" ]; then
         sudo apt update && sudo apt upgrade
 elif [ "$1" == "dnf" ]; then
-        sudo dnf check-update && sudo dnf upgrade
+        sudo dnf upgrade
 elif [ "$1" == "eopkg" ]; then
         sudo eopkg update-repo && sudo eopkg upgrade
 elif [ "$1" == "pacman" ]; then
