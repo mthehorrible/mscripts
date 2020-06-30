@@ -9,8 +9,10 @@ elif [ "$1" == "dnf" ]; then
         sudo dnf install magic-wormhole
 elif [ "$1" == "snap" ]; then
         sudo snap install wormhole
+elif [ "$1" == "yay" ]; then
+        yay -S magic-wormhole
 else
-        printf "${RED}Invalid option. Enter either apt, dnf, or snap.${NC}\n"
+        printf "${RED}Invalid option. Enter either apt, dnf, snap, or yay.${NC}\n"
 fi
 
 
